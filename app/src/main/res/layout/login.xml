@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02106C">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView2"
+        android:layout_width="339dp"
+        android:layout_height="345dp"
+        app:srcCompat="@drawable/rename" />
+
+    <EditText
+
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFBFB"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@+id/PasswordText"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFDFD"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:text="Password" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+</android.widget.RelativeLayout>
