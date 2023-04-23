@@ -11,7 +11,7 @@
         android:layout_height="335dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-70dp"
-        app:srcCompat="@drawable/profilna" />
+        app:srcCompat="@drawable/rename" />
 
     <EditText
         android:id="@+id/editTextText3"
@@ -19,10 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart=""
         android:layout_marginTop="10dp"
-        android:layout_marginEnd=""
-        android:layout_marginBottom=""
         android:background="@color/white"
         android:ems="10"
         android:inputType="text" />
@@ -62,15 +59,15 @@
         android:text="Prezime" />
 
     <TextView
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:layout_below="@id/editTextText5"
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gmail" />
+        android:layout_below="@id/editTextText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
     <EditText
         android:layout_marginTop="10dp"
