@@ -1,6 +1,9 @@
 package com.example.projekat;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,6 +35,43 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        Button loginbtn = findViewById(R.id.login);
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityLogin();
+            }
+        });
+
+        Button registerbtn = findViewById(R.id.register);
+        registerbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityRegister();
+            }
+        });
+        Button unregisterbtn = findViewById(R.id.unregister);
+        unregisterbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityUnregister();
+            }
+        });
+
+    }
+    public void openActivityLogin() {
+        Intent intent = new Intent(this,Login.class);
+        startActivity(intent);
+    }
+
+    public void openActivityRegister() {
+        Intent intent = new Intent(this,Register.class);
+        startActivity(intent);
+    }
+
+    public void openActivityUnregister() {
+        Intent intent = new Intent(this,Menu.class);
+        startActivity(intent);
     }
 
 }

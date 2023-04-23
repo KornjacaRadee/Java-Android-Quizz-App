@@ -7,42 +7,51 @@
     >
 
     <TextView
-        android:background="@color/white"
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Ne znam"
-        android:textSize="35dp" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:height="30dp"
+        android:width="130dp"
+        android:background="@color/white"
+        android:text="Kordun"
+        android:textSize="20dp" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
-        android:layout_marginLeft="33dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="35dp"
+
         android:layout_marginTop="20dp"
         android:layout_below="@id/textView4"
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ne znam" />
+        android:text="Banija" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@id/textView9"
-        android:layout_marginLeft="36dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="20dp"
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ne znam" />
+        android:text="Lika" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@id/textView11"
-        android:layout_marginLeft="39dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="55dp"
         android:layout_marginTop="20dp"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -57,8 +66,8 @@
         android:layout_below="@id/textView12"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:ems="7"
         android:inputType="text"
@@ -66,10 +75,12 @@
         android:textAlignment="center" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:textSize="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
         android:layout_alignParentRight="true"
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
@@ -77,10 +88,12 @@
         android:text="Ne Znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="33dp"
-        android:textSize="35dp"
+        android:layout_marginRight="35dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/textView13"
         android:id="@+id/textView14"
@@ -88,10 +101,12 @@
         android:layout_height="wrap_content"
         android:text="Ne Znam" />
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="36dp"
-        android:textSize="35dp"
+        android:layout_marginRight="45dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/textView14"
         android:id="@+id/textView18"
@@ -99,10 +114,12 @@
         android:layout_height="wrap_content"
         android:text="Ne Znam" />
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="39dp"
-        android:textSize="35dp"
+        android:layout_marginRight="55dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/textView18"
         android:id="@+id/textView19"
@@ -118,8 +135,8 @@
         android:layout_below="@id/textView12"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="46dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="65dp"
         android:background="@color/white"
         android:ems="7"
         android:inputType="text"
@@ -147,7 +164,7 @@
         android:layout_below="@id/editTextText2"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="47dp"
+        android:layout_marginLeft="65dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:ems="7"
@@ -156,10 +173,12 @@
         android:textAlignment="center" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@id/editTextTextdonji"
-        android:layout_marginLeft="39dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="55dp"
         android:layout_marginTop="20dp"
         android:id="@+id/textViewdole1"
         android:layout_width="wrap_content"
@@ -167,10 +186,12 @@
         android:text="Ne znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@id/textViewdole1"
-        android:layout_marginLeft="36dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="20dp"
         android:id="@+id/textViewdole2"
         android:layout_width="wrap_content"
@@ -178,9 +199,11 @@
         android:text="Ne znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
-        android:layout_marginLeft="33dp"
-        android:textSize="35dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="20dp"
         android:layout_below="@id/textViewdole2"
         android:id="@+id/textViewdonji3"
@@ -188,15 +211,17 @@
         android:layout_height="wrap_content"
         android:text="Ne znam" />
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@id/textViewdonji3"
         android:id="@+id/textViewdole4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="20dp"
-        android:text="Ne znam"
-        android:textSize="35dp" />
+        android:text="Ne znam" />
 
     <EditText
         android:id="@+id/editTextTextdonji3"
@@ -206,7 +231,7 @@
         android:layout_below="@id/editTextText2"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="288dp"
+        android:layout_marginLeft="208dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:ems="7"
@@ -215,10 +240,12 @@
         android:textAlignment="center" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="39dp"
-        android:textSize="35dp"
+        android:layout_marginRight="55dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/editTextTextdonji3"
         android:id="@+id/textViewdole5"
@@ -227,10 +254,12 @@
         android:text="Ne Znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="36dp"
-        android:textSize="35dp"
+        android:layout_marginRight="45dp"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textViewdole5"
         android:id="@+id/textViewdole6"
@@ -239,10 +268,12 @@
         android:text="Ne Znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="33dp"
-        android:textSize="35dp"
+        android:layout_marginRight="35dp"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textViewdole6"
         android:id="@+id/textdole8"
@@ -251,11 +282,13 @@
         android:text="Ne Znam" />
 
     <TextView
+        android:height="30dp"
+        android:width="130dp"
+        android:textSize="20dp"
         android:background="@color/white"
         android:layout_below="@+id/textdole8"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:textSize="35dp"
+        android:layout_marginRight="25dp"
         android:layout_alignParentRight="true"
         android:id="@+id/textView98"
         android:layout_width="wrap_content"
