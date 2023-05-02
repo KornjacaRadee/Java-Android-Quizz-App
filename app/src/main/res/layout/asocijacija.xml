@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#02106C">
-    >
+
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:height="30dp"
         android:width="130dp"
         android:background="@color/white"
@@ -79,7 +79,7 @@
         android:width="130dp"
         android:textSize="20dp"
         android:background="@color/white"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="25dp"
         android:layout_alignParentRight="true"
         android:id="@+id/textView13"
@@ -308,46 +308,61 @@
         android:textColor="@color/white"
         android:background="@color/purple_200"
         android:textSize="20dp"
-        android:layout_below="@id/button2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
         android:id="@+id/br1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ljubicasti" />
 
-    <EditText
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="30dp"
-        android:background="@color/white"
-        android:layout_below="@id/br1"
-        android:id="@+id/editTextNumber"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
-
     <TextView
+
 
         android:textColor="@color/white"
         android:background="@color/black"
         android:textSize="20dp"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/button2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crni djavo" />
 
     <EditText
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/white"
-        android:layout_below="@id/br1"
-        android:id="@+id/editTextNumber1"
-        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextText4"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="text"
+        android:text="bod"
+        android:background="@color/white"/>
+
+    <EditText
+        android:layout_marginRight="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:id="@+id/editTextText7"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="bod" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button2"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Time"
+        android:textAlignment="center" />
 
 
 </android.widget.RelativeLayout>

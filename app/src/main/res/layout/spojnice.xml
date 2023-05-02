@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02106C">
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_below="@id/button14"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/br1"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="Ljubicasti" />
+
+    <TextView
+
+
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/textView17"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        android:text="Crveni" />
+
+    <EditText
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextText4"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="bod"
+        android:background="@color/white"/>
+
+    <EditText
+        android:layout_marginRight="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:id="@+id/editTextText7"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="bod" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_below="@id/textView20"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_below="@id/button12"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_below="@id/button13"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText4"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_below="@id/button15"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:layout_below="@id/textView20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button18"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_below="@id/button19"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button20"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button21"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U redu"
+        android:layout_below="@id/button22"
+        android:layout_centerHorizontal="true"/>
+
+
+</android.widget.RelativeLayout>
+
+
+
