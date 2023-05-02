@@ -58,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button profilrbtn = findViewById(R.id.profil);
+        profilrbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityProfil();
+            }
+        });
+
     }
     public void openActivityLogin() {
         Intent intent = new Intent(this,Login.class);
@@ -73,5 +81,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Menu.class);
         startActivity(intent);
     }
+
+    public void openActivityProfil() {
+        Intent intent = new Intent(this,profil.class);
+        startActivity(intent);
+    }
+
+
 
 }
