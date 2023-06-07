@@ -20,19 +20,36 @@
         <activity
             android:name=".Menu"
             android:exported="false" />
+
         <activity
             android:name=".Register"
             android:exported="false" />
-        <activity
+        <!--<activity
             android:name=".Login$Register"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".Login"
             android:exported="false" />
+
+        <activity android:name=".Asocijacije" android:exported="true">
+
+        </activity>
+
+        <activity android:name=".Korak"
+             android:exported="true"></activity>
+        <activity android:name=".Skocko" >
+
+        </activity>
+<activity android:name=".Slova" >
+
+</activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

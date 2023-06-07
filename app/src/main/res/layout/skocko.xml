@@ -1,316 +1,361 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#02106C"
     android:layout_height="match_parent">
 
 
-
     <TextView
-        android:layout_below="@id/textView33"
         android:id="@+id/textView32"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView33"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
-        android:text="skoocko netacan" />
+        android:text="skoocko netacan"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
 
     <EditText
         android:id="@+id/editTextText15"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText14"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
-        android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="text"
-        android:layout_below="@id/editTextText14" />
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
 
     <EditText
-        android:layout_below="@id/editTextText13"
         android:id="@+id/editTextText14"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText13"
+        android:layout_marginTop="14dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-         />
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText12" />
 
     <TextView
+        android:id="@+id/id"
+        android:layout_width="100dp"
+
+        android:layout_height="48dp"
+        android:text="Ljubicasti"
         android:textAlignment="center"
         android:textColor="@color/white"
-
         android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:id="@+id/br1"
-        android:layout_width="100dp"
-        android:layout_height="48dp"
-        android:text="Ljubicasti" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
 
 
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="5dp"
         android:id="@+id/textView17"
         android:layout_width="100dp"
         android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:text="Crveni"
         android:textAlignment="center"
-        android:text="Crveni" />
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:textAlignment="center"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/editTextText4"
+        android:id="@+id/score"
         android:layout_width="50dp"
         android:layout_height="48dp"
+        android:background="@color/white"
         android:ems="10"
         android:inputType="text"
         android:text="bod"
-        android:background="@color/white"/>
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:textAlignment="center"
-
-        android:layout_marginRight="120dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
         android:id="@+id/editTextText7"
+
         android:layout_width="50dp"
         android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="bod" />
+        android:text="bod"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="60dp"
         android:layout_height="48dp"
-        android:layout_below="@id/editTextText4"
+        android:layout_below="@id/score"
         android:layout_centerHorizontal="true"
         android:background="@color/white"
         android:text="Time"
         android:textAlignment="center"
         android:textSize="25dp"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintStart_toEndOf="@+id/editTextText7"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText10"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView20"
+        android:layout_marginTop="12dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
 
-        android:layout_below="@id/textView20"/>
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText11" />
 
     <EditText
         android:id="@+id/editTextText11"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText10"
+        android:layout_marginTop="9dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
 
-        android:layout_below="@id/editTextText10"/>
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText13" />
 
     <EditText
         android:id="@+id/editTextText12"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText11"
+        android:layout_marginTop="9dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:layout_below="@id/editTextText11" />
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
 
     <EditText
         android:id="@+id/editTextText13"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:textAlignment="center"
-        android:text="skocko"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText12"
+        android:layout_marginTop="9dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:layout_below="@id/editTextText12" />
+        android:text="skocko"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText15" />
 
     <TextView
-        android:layout_below="@id/textView20"
         android:id="@+id/textView28"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView20"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:text="skoocko netacan"
+        android:textAlignment="center"
         android:textSize="20dp"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
-        android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:text="skoocko netacan" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
-        android:layout_below="@id/textView28"
         android:id="@+id/textView29"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView28"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
         android:background="@color/white"
-        android:text="skoocko netacan" />
+        android:text="skoocko netacan"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
-        android:layout_below="@id/textView29"
         android:id="@+id/textView30"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView29"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="skoocko netacan" />
+        android:text="skoocko netacan"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <TextView
-        android:layout_below="@id/textView30"
         android:id="@+id/textView31"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
         android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textView30"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
         android:background="@color/white"
-        android:text="skoocko netacan" />
+        android:text="skoocko netacan"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="175dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_below="@id/textView31"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="-1dp"
+        android:layout_marginTop="9dp"
         android:background="@color/white"
         android:text="skoocko netacan"
-        android:textAlignment="center" />
-
-    <LinearLayout
-        android:id="@+id/drugilin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextText15"
-        android:layout_marginRight="10dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-            android:text="1" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-
-
-            android:text="2" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-            android:text="3" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-            android:text="4" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:text="5" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/prvilin"
-            android:layout_marginEnd="8dp"
-            android:text="6" />
-
-    </LinearLayout>
-
-    <EditText
-        android:layout_marginTop="10dp"
         android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        android:background="@color/white"
-        android:layout_below="@id/drugilin"
-        android:id="@+id/editTextText16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="resenje" />
-
-    <EditText
-        android:layout_marginTop="10dp"
-        android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        android:background="@color/white"
-        android:layout_below="@id/editTextText16"
-        android:id="@+id/editTextText17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <Button
+        android:id="@+id/button8"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="61dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="5"
+        app:layout_constraintStart_toEndOf="@+id/button30"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="61dp"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
+
+    <EditText
+        android:id="@+id/editTextText17"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextText16"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/editTextText17"
+        android:layout_marginTop="19dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="unesi resenje"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="61dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
+
+    <Button
         android:id="@+id/button35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
         android:text="U redu"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText16" />
+
+    <EditText
+        android:id="@+id/editTextText16"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="resenje"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText17" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
 
 
-</android.widget.RelativeLayout>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:text="4"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="61dp"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="sledeca igra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

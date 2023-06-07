@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#02106C">
@@ -11,56 +11,81 @@
         android:layout_width="338dp"
         android:layout_height="285dp"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/rename" />
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rename"
+        android:contentDescription="Image for login"
+        />
 
     <EditText
-
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_below="@+id/emailText"
-        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="300dp"
         android:background="#FFFBFB"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Enter your name"
+        />
 
     <EditText
         android:id="@+id/password"
-
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_below="@+id/PasswordText"
-        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
         android:background="#FFFDFD"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:hint="Enter your password"
+        />
 
     <TextView
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
         android:id="@+id/PasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:layout_marginTop="20dp"
-        android:text="Password" />
+        android:layout_marginBottom="24dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <TextView
-        android:layout_marginTop="50dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
         android:id="@+id/emailText"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:text="Email" />
+        android:layout_marginBottom="24dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+           />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Login" />
-</android.widget.RelativeLayout>
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

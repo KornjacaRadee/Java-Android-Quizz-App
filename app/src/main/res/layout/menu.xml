@@ -1,55 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#02106C"
     android:layout_height="match_parent">
-
 
     <TextView
         android:id="@+id/accName"
         android:layout_width="100dp"
         android:layout_height="45dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="248dp"
         android:background="@drawable/aaa"
         android:clickable="true"
-        android:text="milee"
         android:gravity="center"
+        android:text="milee"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tokeen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tokeen"
         android:layout_width="64dp"
         android:layout_height="45dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/ringyellow"
-        android:padding="7dp"
         android:gravity="center"
+        android:padding="7dp"
         android:text="15"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/accName"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:id="@+id/logo"
         android:layout_width="270dp"
         android:layout_height="169dp"
+        app:layout_constraintBottom_toTopOf="@id/playbtn"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tokeen"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/rename" />
 
     <Button
-        android:layout_below="@id/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:id="@+id/playbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:insetRight="0dp"
-        android:text="Nova Igra" />
-</android.widget.RelativeLayout>
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:text="Nova Igra"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
