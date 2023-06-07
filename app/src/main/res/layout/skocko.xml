@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#02106C"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#02106C">
 
 
     <TextView
@@ -29,7 +29,8 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="skocko"
+        android:text="."
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
@@ -43,7 +44,8 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="skocko"
+        android:text="."
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText12" />
@@ -95,7 +97,7 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="bod"
+        android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/id"
         app:layout_constraintTop_toTopOf="parent" />
@@ -123,8 +125,10 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
+        android:text="."
 
-        android:text="skocko"
+
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText11" />
@@ -138,8 +142,9 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
+        android:text="."
 
-        android:text="skocko"
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText13" />
@@ -153,7 +158,8 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="skocko"
+        android:text="."
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
@@ -167,7 +173,8 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="skocko"
+        android:text="."
+
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText15" />
@@ -239,7 +246,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/pik"
         android:layout_width="60dp"
         android:layout_height="48dp"
 
@@ -247,18 +254,18 @@
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:text="5"
-        app:layout_constraintStart_toEndOf="@+id/button30"
+        app:layout_constraintStart_toEndOf="@+id/tref"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/srce"
         android:layout_width="60dp"
         android:layout_height="48dp"
 
         android:layout_marginStart="14dp"
         android:layout_marginTop="61dp"
         android:text="3"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/skocko"
         app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
 
     <EditText
@@ -275,10 +282,10 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/tref" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/skocko"
         android:layout_width="60dp"
         android:layout_height="48dp"
 
@@ -317,34 +324,36 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextText17" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/kocka"
         android:layout_width="60dp"
         android:layout_height="48dp"
 
 
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
+
         android:layout_marginTop="61dp"
         android:text="2"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
-
-    <Button
-        android:id="@+id/button30"
-        android:layout_width="60dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="60dp"
-        android:text="4"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/pik"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/tref"
         android:layout_width="60dp"
         android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="61dp"
+        android:text="4"
+        app:layout_constraintStart_toEndOf="@+id/srce"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText14" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="61dp"
         android:text="6"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kocka"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <Button
@@ -356,6 +365,16 @@
         android:text="sledeca igra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/tref"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
