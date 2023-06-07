@@ -162,8 +162,27 @@ public class Korak extends AppCompatActivity {
 
     private void showTextAndStartTimer(final TextView textView) {
         textView.setVisibility(View.VISIBLE);
-        textView.setText("Ovde se prikazuje određeni tekst");
 
+        String textToShow = ""; // Inicijalno prazan tekst
+
+        // Proverite identifikator TextView-a i postavite odgovarajući tekst
+        if (textView.getId() == R.id.textView21) {
+            textToShow = "imaju mostove";
+        } else if (textView.getId() == R.id.textView23) {
+            textToShow = "mogu biti stalni";
+        } else if (textView.getId() == R.id.textView24) {
+            textToShow = "imaju svoj konac";
+        } else if (textView.getId() == R.id.textView25) {
+            textToShow = "ime duguju mleku";
+        } else if (textView.getId() == R.id.textView26) {
+            textToShow = "imaju ih tetsere";
+        } else if (textView.getId() == R.id.textView27) {
+            textToShow = "imaju svoju pastu";
+        } else if (textView.getId() == R.id.neki1) {
+            textToShow = "koristimo cetkicu za njih";
+        }
+
+        textView.setText(textToShow);
         countDownTimer.start();
     }
 
