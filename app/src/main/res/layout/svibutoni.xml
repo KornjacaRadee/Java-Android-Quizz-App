@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/slagalica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slagalica"
+
+        />
+
+    <Button
+        android:id="@+id/asocijacije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slagalica"
+        android:text="asocijacije" />
+
+    <Button
+        android:id="@+id/kozna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asocijacije"
+        android:text="Ko zna zna" />
+
+    <Button
+        android:id="@+id/spojnice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kozna"
+        android:text="Spojnice" />
+
+    <Button
+        android:id="@+id/skocko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spojnice"
+        android:text="Skocko" />
+    <Button
+        android:id="@+id/korak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skocko"
+        android:text="Korak po korak" />
+
+    <Button
+        android:id="@+id/profilcic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/korak"
+        android:text="Profil" />
+
+</RelativeLayout>

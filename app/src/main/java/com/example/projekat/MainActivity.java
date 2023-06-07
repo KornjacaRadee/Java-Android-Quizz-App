@@ -65,12 +65,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button profilrbtn = findViewById(R.id.profil);
+
+
+        Button svibutoni = findViewById(R.id.svibutonii);
         profilrbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityProfil();
+                openActivityButoni();
             }
         });
+
 
     }
     public void openActivityLogin() {
@@ -90,10 +94,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openActivityProfil() {
-        Intent intent = new Intent(this,profil.class);
+    public void openActivityButoni() {
+        Intent intent = new Intent(this, svibutoni.class);
         startActivity(intent);
     }
+
+
+
 
 
 
