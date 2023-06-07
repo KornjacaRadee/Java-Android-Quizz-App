@@ -43,16 +43,6 @@
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
-        android:text="Start"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
-
     <TextView
         android:id="@+id/editTextText7"
         android:layout_width="50dp"
@@ -89,7 +79,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Prvi Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -104,7 +94,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Drugi Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -119,7 +109,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Treci Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -134,7 +124,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Cetvrti Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -149,7 +139,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Peti Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -164,7 +154,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Sesti Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -179,7 +169,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
-        android:text="Prvi"
+        android:text="Sedmi Korak"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -207,8 +197,8 @@
 
     <Button
         android:id="@+id/button28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_below="@id/editTextText8"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
@@ -220,9 +210,9 @@
 
     <Button
         android:id="@+id/sledecibtn"
-        android:layout_width="99dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="68dp"
         android:text="sledeca igra"
         app:layout_constraintBottom_toBottomOf="parent"

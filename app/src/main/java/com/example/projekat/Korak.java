@@ -25,6 +25,7 @@ public class Korak extends AppCompatActivity {
     private TextView textView25;
     private TextView textView26;
     private TextView textView27;
+    private TextView neki1;
 
     private TextView textView20;
     private EditText answerEditText;
@@ -43,6 +44,7 @@ public class Korak extends AppCompatActivity {
     private boolean textView25Opened = false;
     private boolean textView26Opened = false;
     private boolean textView27Opened = false;
+    private boolean textView28Opened = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,7 @@ public class Korak extends AppCompatActivity {
         textView25 = findViewById(R.id.textView25);
         textView26 = findViewById(R.id.textView26);
         textView27 = findViewById(R.id.textView27);
+        neki1 = findViewById(R.id.neki1);
         answerEditText = findViewById(R.id.editTextText8);
         scoreTextView = findViewById(R.id.score);
 
@@ -110,6 +113,14 @@ public class Korak extends AppCompatActivity {
             }
         });
 
+        neki1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTextAndStartTimer(neki1);
+                textView28Opened = true;
+            }
+        });
+
         countDownTimer = new CountDownTimer(TIMER_DURATION, COUNTDOWN_INTERVAL) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -152,6 +163,7 @@ public class Korak extends AppCompatActivity {
     private void showTextAndStartTimer(final TextView textView) {
         textView.setVisibility(View.VISIBLE);
         textView.setText("Ovde se prikazuje određeni tekst");
+
         countDownTimer.start();
     }
 
@@ -181,6 +193,9 @@ public class Korak extends AppCompatActivity {
         if (textView27Opened) {
             scoreIncrement -= 2; // Oduzmi 2 boda ako je textView27 otvoren
         }
+        if (textView28Opened) {
+            scoreIncrement -= 5; // Oduzmi 2 boda ako je textView27 otvoren
+        }
 
         if (userAnswer.equalsIgnoreCase("tacan_odgovor")) {
             currentScore += scoreIncrement; // Dodaj ukupan broj bodova
@@ -206,6 +221,7 @@ public class Korak extends AppCompatActivity {
         textView25.setEnabled(false);
         textView26.setEnabled(false);
         textView27.setEnabled(false);
+        neki1.setEnabled(false);
     }
 }
 
