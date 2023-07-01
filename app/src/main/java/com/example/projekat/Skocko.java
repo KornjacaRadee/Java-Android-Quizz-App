@@ -1,16 +1,16 @@
 package com.example.projekat;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Skocko extends AppCompatActivity {
 
@@ -111,7 +111,7 @@ public class Skocko extends AppCompatActivity {
                     }
                 }
 
-                String rezultat = "Tačno mesta: " + brojTačnihMesta + ", Netačno mesta: " + brojNetačnihMesta;
+                String rezultat = "Tačno mesta: " + brojTačnihMesta + ", Pogresno mesto: " + brojNetačnihMesta;
                 textView32.setText(rezultat);
 
                 // Provera da li je uneta tačna kombinacija
@@ -172,7 +172,7 @@ public class Skocko extends AppCompatActivity {
                     // Vreme je isteklo
                     Toast.makeText(getApplicationContext(), "Vreme je isteklo!", Toast.LENGTH_SHORT).show();
 
-                    button32.performClick();
+
 
 
                 } else {

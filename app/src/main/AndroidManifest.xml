@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projekat"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -31,12 +36,16 @@
             android:name=".Login"
             android:exported="false" />
 
+
+
+
         <activity android:name=".Asocijacije" android:exported="true">
 
         </activity>
-
-        <activity android:name=".Korak"
-             android:exported="true"></activity>
+        <activity android:name=".KoznaActivity" />
+        <activity
+            android:name=".Korak"
+            android:exported="true" />
         <activity android:name=".Skocko" >
 
         </activity>
@@ -44,6 +53,9 @@
 
 </activity>
 
+
+
+        <activity android:name=".Spojnice" />
 
         <activity
             android:name=".MainActivity"
@@ -56,6 +68,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
     </application>
 
 </manifest>

@@ -1,33 +1,30 @@
 package com.example.projekat;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.TextView;
-import android.widget.EditText;
-import android.widget.Toast;
-import java.util.ArrayList;
-import java.util.List;
 import android.widget.Button;
-import android.os.Handler;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Korak extends AppCompatActivity {
 
-
-    private TextView textView21;
-    private TextView textView23;
-    private TextView textView24;
-    private TextView textView25;
-    private TextView textView26;
-    private TextView textView27;
-    private TextView neki1;
-
     private TextView textView20;
+    private TextView[] textViews;
     private EditText answerEditText;
     private TextView scoreTextView;
 
@@ -38,88 +35,44 @@ public class Korak extends AppCompatActivity {
     private int currentScore = 0;
     private final int SCORE_INCREMENT = 20;
 
-    private boolean textView21Opened = false;
-    private boolean textView23Opened = false;
-    private boolean textView24Opened = false;
-    private boolean textView25Opened = false;
-    private boolean textView26Opened = false;
-    private boolean textView27Opened = false;
-    private boolean textView28Opened = false;
+    private boolean[] textViewOpened;
+
+    private FirebaseFirestore db;
+    private DocumentReference documentRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.korak);
 
-
-
-
         textView20 = findViewById(R.id.textView20);
-        textView21 = findViewById(R.id.textView21);
-        textView23 = findViewById(R.id.textView23);
-        textView24 = findViewById(R.id.textView24);
-        textView25 = findViewById(R.id.textView25);
-        textView26 = findViewById(R.id.textView26);
-        textView27 = findViewById(R.id.textView27);
-        neki1 = findViewById(R.id.neki1);
+        textViews = new TextView[]{
+                findViewById(R.id.textView21),
+                findViewById(R.id.textView23),
+                findViewById(R.id.textView24),
+                findViewById(R.id.textView25),
+                findViewById(R.id.textView26),
+                findViewById(R.id.textView27),
+                findViewById(R.id.neki1)
+        };
         answerEditText = findViewById(R.id.editTextText8);
         scoreTextView = findViewById(R.id.score);
 
-        textView21.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView21);
-                textView21Opened = true;
-            }
-        });
+        db = FirebaseFirestore.getInstance();
+        documentRef = db.collection("KorakPoKorak").document("KorakpoKorak");
 
-        textView23.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView23);
-                textView23Opened = true;
-            }
-        });
+        textViewOpened = new boolean[textViews.length];
 
-        textView24.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView24);
-                textView24Opened = true;
-            }
-        });
-
-        textView25.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView25);
-                textView25Opened = true;
-            }
-        });
-
-        textView26.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView26);
-                textView26Opened = true;
-            }
-        });
-
-        textView27.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(textView27);
-                textView27Opened = true;
-            }
-        });
-
-        neki1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTextAndStartTimer(neki1);
-                textView28Opened = true;
-            }
-        });
+        for (int i = 0; i < textViews.length; i++) {
+            final int index = i;
+            textViews[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showTextAndStartTimer(index);
+                    textViewOpened[index] = true;
+                }
+            });
+        }
 
         countDownTimer = new CountDownTimer(TIMER_DURATION, COUNTDOWN_INTERVAL) {
             @Override
@@ -150,40 +103,33 @@ public class Korak extends AppCompatActivity {
         sledecibtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityAcocijacije();
+                openActivityAsocijacije();
             }
         });
     }
 
-    public void openActivityAcocijacije() {
-        Intent intent = new Intent(this, Asocijacije.class);
-        startActivity(intent);
-    }
-
-    private void showTextAndStartTimer(final TextView textView) {
+    private void showTextAndStartTimer(final int index) {
+        final TextView textView = textViews[index];
         textView.setVisibility(View.VISIBLE);
 
-        String textToShow = ""; // Inicijalno prazan tekst
-
-        // Proverite identifikator TextView-a i postavite odgovarajući tekst
-        if (textView.getId() == R.id.textView21) {
-            textToShow = "imaju mostove";
-        } else if (textView.getId() == R.id.textView23) {
-            textToShow = "mogu biti stalni";
-        } else if (textView.getId() == R.id.textView24) {
-            textToShow = "imaju svoj konac";
-        } else if (textView.getId() == R.id.textView25) {
-            textToShow = "ime duguju mleku";
-        } else if (textView.getId() == R.id.textView26) {
-            textToShow = "imaju ih tetsere";
-        } else if (textView.getId() == R.id.textView27) {
-            textToShow = "imaju svoju pastu";
-        } else if (textView.getId() == R.id.neki1) {
-            textToShow = "koristimo cetkicu za njih";
-        }
-
-        textView.setText(textToShow);
-        countDownTimer.start();
+        documentRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                    String fieldKey = "Korak" + (index + 1);
+                    String textToShow = documentSnapshot.getString(fieldKey);
+                    textView.setText(textToShow);
+                    countDownTimer.start();
+                } else {
+                    Log.d("Korak", "Dokument ne postoji");
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.e("Korak", "Greška pri pristupu bazi podataka", e);
+            }
+        });
     }
 
     private void showNotification() {
@@ -192,39 +138,23 @@ public class Korak extends AppCompatActivity {
 
     private void checkAnswer() {
         String userAnswer = answerEditText.getText().toString().trim();
-        int scoreIncrement = 20;
+        int scoreIncrement = SCORE_INCREMENT;
 
-        if (textView21Opened) {
-            scoreIncrement -= 0; // Oduzmi 2 boda ako je textView21 otvoren
-        }
-        if (textView23Opened) {
-            scoreIncrement -= 2; // Oduzmi 2 boda ako je textView23 otvoren
-        }
-        if (textView24Opened) {
-            scoreIncrement -= 2; // Oduzmi 2 boda ako je textView24 otvoren
-        }
-        if (textView25Opened) {
-            scoreIncrement -= 2; // Oduzmi 2 boda ako je textView25 otvoren
-        }
-        if (textView26Opened) {
-            scoreIncrement -= 2; // Oduzmi 2 boda ako je textView26 otvoren
-        }
-        if (textView27Opened) {
-            scoreIncrement -= 2; // Oduzmi 2 boda ako je textView27 otvoren
-        }
-        if (textView28Opened) {
-            scoreIncrement -= 5; // Oduzmi 2 boda ako je textView27 otvoren
+        for (boolean opened : textViewOpened) {
+            if (opened) {
+                scoreIncrement -= 2;
+            }
         }
 
-        if (userAnswer.equalsIgnoreCase("tacan_odgovor")) {
-            currentScore += scoreIncrement; // Dodaj ukupan broj bodova
+        if (userAnswer.equalsIgnoreCase("zubi")) {
+            currentScore += scoreIncrement;
             Toast.makeText(this, "Odgovor je tačan! Dobili ste " + scoreIncrement + " bodova.", Toast.LENGTH_SHORT).show();
 
-            disableTextViews(); // Onemogući klikabilnost TextView elemenata
-            answerEditText.setEnabled(false); // Onemogući unos teksta
+            disableTextViews();
+            answerEditText.setEnabled(false);
 
             Button sledecibtn = findViewById(R.id.sledecibtn);
-            sledecibtn.setEnabled(true); // Omogući klikabilnost dugmeta "sledecibtn"
+            sledecibtn.setEnabled(true);
         } else {
             Toast.makeText(this, "Odgovor nije tačan!", Toast.LENGTH_SHORT).show();
         }
@@ -234,16 +164,13 @@ public class Korak extends AppCompatActivity {
     }
 
     private void disableTextViews() {
-        textView21.setEnabled(false);
-        textView23.setEnabled(false);
-        textView24.setEnabled(false);
-        textView25.setEnabled(false);
-        textView26.setEnabled(false);
-        textView27.setEnabled(false);
-        neki1.setEnabled(false);
+        for (TextView textView : textViews) {
+            textView.setEnabled(false);
+        }
+    }
+
+    public void openActivityAsocijacije() {
+        Intent intent = new Intent(this, Asocijacije.class);
+        startActivity(intent);
     }
 }
-
-
-
-

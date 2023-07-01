@@ -39,7 +39,7 @@
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="bod"
+        android:text="."
         android:textAlignment="center"
         tools:layout_editor_absoluteX="260dp"
         tools:layout_editor_absoluteY="0dp" />
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
-        android:text="Odgovor"
+        android:text="kurac"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.258"
@@ -105,8 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="128dp"
-        android:text="Odgovor"
+        android:text="kita"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/button26"
         app:layout_constraintHorizontal_bias="0.0"
@@ -117,9 +116,9 @@
         android:id="@+id/button25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="kita"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="48dp"
-        android:text="Odgovor"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView22" />
@@ -130,8 +129,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="48dp"
-        android:text="Odgovor"
         android:textColor="@color/black"
+        android:text="kurcina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button25" />
 

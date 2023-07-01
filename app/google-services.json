@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "261180740839",
+    "project_id": "mobilne-f8edb",
+    "storage_bucket": "mobilne-f8edb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261180740839:android:1430c079e82c34e7d77e42",
+        "android_client_info": {
+          "package_name": "com.example.projekat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261180740839-8nq280d698rlf6sh71fneit5b5skq7kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projekat",
+            "certificate_hash": "86ee11ce00799175316b1780d657910592c66612"
+          }
+        },
+        {
+          "client_id": "261180740839-lv7cm78f1au4trdqfnnu3ugccc5rou3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZN-ZBfqw46NXZCygmO2UxVJJ1XVQZjSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261180740839-lv7cm78f1au4trdqfnnu3ugccc5rou3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
